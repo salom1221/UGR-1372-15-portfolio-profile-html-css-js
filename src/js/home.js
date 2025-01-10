@@ -1,17 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
+document.addEventListener("DOMContentLoaded", function() {
+  // Target the hamburger icon and hidden menu
+  const menuButton = document.querySelector('.hamburger-icon');
+  const hiddenMenu = document.querySelector('.hidden-menu');
+  
+  console.log(menuButton); // Check if the hamburger icon is selected
+  console.log(hiddenMenu); // Check if the hidden menu is selected
 
-  // Debugging: Check if elements are found
-  console.log("Hamburger:", hamburger);
-  console.log("Menu:", menu);
-
-  hamburger.addEventListener('click', () => {
-    console.log("Hamburger clicked");
-    menu.classList.toggle('active');
+  // Add click event listener to the hamburger icon
+  menuButton.addEventListener('click', function() {
+    console.log('Hamburger icon clicked');
+    hiddenMenu.classList.toggle('active');
   });
 });
-
 
 
 // Select the icons
