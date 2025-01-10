@@ -1,19 +1,19 @@
-// Select the hamburger menu and hidden menu
-const hamburgerMenu = document.querySelector('.hamburger-icon .menu');
-const hiddenMenu = document.querySelector('.hidden-menu');
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
 
-// Add a click event listener to the hamburger menu
-hamburgerMenu.addEventListener('click', () => {
-  // Toggle the 'active' class on the hidden menu
-  hiddenMenu.classList.toggle('active');
+  // Debugging: Check if elements are found
+  console.log("Hamburger:", hamburger);
+  console.log("Menu:", menu);
+
+  hamburger.addEventListener('click', () => {
+    console.log("Hamburger clicked");
+    menu.classList.toggle('active');
+  });
 });
 
-// Optional: Close the menu when clicking outside
-document.addEventListener('click', (event) => {
-  if (!hamburgerMenu.contains(event.target) && !hiddenMenu.contains(event.target)) {
-    hiddenMenu.classList.remove('active');
-  }
-});
+
+
 // Select the icons
 const githubIcon = document.querySelector('.header-icons .fab.fa-github').parentElement;
 const telegramIcon = document.querySelector('.header-icons .fab.fa-telegram').parentElement;

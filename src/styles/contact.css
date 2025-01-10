@@ -35,16 +35,19 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  transition: color 0.3s, text-decoration 0.3s; 
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+  color:aqua;
 }
 
 /* Header icons */
 .header-icons {
   display: flex;
   gap: 15px;
+  order: 1;
 }
 
 .header-icons span a {
@@ -56,6 +59,7 @@ nav ul li a:hover {
 .hamburger-icon {
   display: none;
   cursor: pointer;
+  order: 2;
 }
 
 .hamburger-icon .menu {
@@ -176,6 +180,12 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+.success-message {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  display: none; 
 }
 footer{
   background-color: #000;

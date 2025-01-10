@@ -35,16 +35,19 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s; 
   }
   
   nav ul li a:hover {
     text-decoration: underline;
+    color:aqua;
   }
   
   /* Header icons */
   .header-icons {
     display: flex;
     gap: 15px;
+    order: 1;
   }
   
   .header-icons span a {
@@ -56,6 +59,7 @@
   .hamburger-icon {
     display: none;
     cursor: pointer;
+    order: 2;
   }
   
   .hamburger-icon .menu {
@@ -122,6 +126,8 @@
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
+    height: 200px; 
+    object-fit: cover;
 }
 
 .image-container p {

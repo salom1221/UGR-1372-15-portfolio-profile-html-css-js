@@ -36,9 +36,11 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  transition: color 0.3s, text-decoration 0.3s; 
 }
 
 nav ul li a:hover {
+  color:aqua;
   text-decoration: underline;
 }
 
@@ -46,7 +48,7 @@ nav ul li a:hover {
 .header-icons {
   display: flex;
   gap: 15px;
-  order: -1;
+  order: 1;
 }
 
 .header-icons span a {
@@ -58,6 +60,7 @@ nav ul li a:hover {
 .hamburger-icon {
   display: none;
   cursor: pointer;
+  order: 2;
  
 }
 
@@ -93,6 +96,14 @@ nav ul li a:hover {
 .hidden-menu ul li a:hover {
   text-decoration: underline;
 }
+.hidden-menu {
+  display: none;
+}
+
+.hidden-menu.active {
+  display: block;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
