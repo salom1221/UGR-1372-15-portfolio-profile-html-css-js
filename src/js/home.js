@@ -1,18 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Target the hamburger icon and hidden menu
-  const menuButton = document.querySelector('.hamburger-icon');
+  const menuButton = document.querySelector('.hamburger-icons');
   const hiddenMenu = document.querySelector('.hidden-menu');
-  
-  console.log(menuButton); // Check if the hamburger icon is selected
-  console.log(hiddenMenu); // Check if the hidden menu is selected
 
-  // Add click event listener to the hamburger icon
   menuButton.addEventListener('click', function() {
-    console.log('Hamburger icon clicked');
     hiddenMenu.classList.toggle('active');
   });
 });
-
 
 // Select the icons
 const githubIcon = document.querySelector('.header-icons .fab.fa-github').parentElement;
