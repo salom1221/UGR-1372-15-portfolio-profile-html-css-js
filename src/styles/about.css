@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Header icons */
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-icons span a {
+  color: white;
+  font-size: 20px;
+}
+
+/* Hamburger icon */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon .menu {
+  font-size: 24px;
+  color: white;
+}
+
+.hidden-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  background-color: #444;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hidden-menu ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.hidden-menu ul li {
+  margin: 10px 0;
+}
+
+.hidden-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hidden-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.frame {
+  background: #2c3e50; /* Slightly lighter blue for contrast */
+  border: 1px solid #34495e; /* Subtle border for separation */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex: 1 1 100%; /* Default to full width */
+  max-width: 100%;
+  color: #fff; /* White text for dark background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frame img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.frame video {
+  width: 100%;
+  max-width: 400px; /* Limit the size of the video */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.frame h2, .frame h3 {
+  color: #fff; /* Light gray for headings */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+/* Text Styling */
+.frame p {
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+footer{
+  background-color: #000;
+  color: blue;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) { /* Mobile portrait and tablet portrait */
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: none; /* Hide navigation links */
+  }
+
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
+  }
+
+  .header-icons {
+    order: 1;
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    gap: 10px;
+  }
+  main {
+    flex-direction: column; /* Stack frames vertically */
+}
+
+ .frame {
+  flex-direction: column;
+  padding: 20px;
+}
+.frame img, .frame video {
+  margin-bottom: 20px;
+}
+ 
+
+}
+.frame p {
+  
+  text-align: left;
+}
+.frame:nth-child(2) p {
+  order: -1; /* Move paragraph above video */
+}
+footer {
+  font-size: 0.9rem; /* Adjust font size for smaller screens */
+  padding: 15px 5px; /* Reduce padding for smaller screens */
+
+}
+
+@media (min-width: 769px) { /* Tablet landscape, mobile landscape, and desktop */
+  nav ul {
+    display: flex; /* Display navigation links */
+  }
+
+  .hamburger-icon {
+    display: none; /* Hide hamburger icon */
+  }
+
+  .header-icons {
+    order: 2;
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 15px;
+  }
+
+  nav ul {
+    flex: 1;
+    justify-content: space-evenly; /* Evenly space navigation links */
+  }
+  main {
+    flex-direction: row; /* Display frames horizontally */
+    justify-content: space-between; /* Add space between frames */
+}
+
+.frame {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+.frame img, .frame video {
+  max-width: 45%;
+  margin: 0;
+}
+.frame p, .frame h2, .frame h3 {
+  text-align: left;
+  max-width: 50%;
+}
+}
