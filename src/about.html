@@ -4,35 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/styles/about.css">
-  <link rel="stylesheet" href="../src/js/about.js">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-          <ul>
+          <ul class="desktop-menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
             <li><a href="futuregoals.html">Future Goals</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <div class="hamburger-icon">
-            <span>
-              <i class="fa fa-bars" id="hamburger"></i>
-            </span>
-            <div class="hidden-menu">
-              <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="futuregoals.html">Future Goals</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
+
+
+         <div class="hamburger-icon">
+        <span>
+          <i class="fa fa-bars" id="hamburger"></i>
+        </span>
+        </div>
+        <div class="hidden-menu">
+        <a href="/index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="./hobbies.html">Hobbies</a>
+        <a href="./futuregoals.html">Future Goals</a>
+        <a href="./contact.html">Contact</a>
+        </div>
+
+
+
+
+
           <div class="header-icons">
             <span>
               <a href="https://github.com/salom1221" target="_blank" rel="noopener noreferrer">
@@ -47,38 +50,38 @@
           </div>
         </nav>
       </header>
-  <main>  
-    
-    <div class=" frame">
-            <img src="./image/about1.jpg" alt="about 1" >  
-             
-            <p>Hello! I’m Selome, a third-year Software Engineering student with a passion for web development and game development. My journey into the world of technology began in high school when I discovered the thrill of writing my first Html code. Since then, I've been captivated by the endless possibilities that software development offers.</p>
-        </div> 
+  <main> 
+    <div class="container">
     <div class="frame">
-      <video src="./image/about2.mp4" controls width="600" height="340">
+        <div><img src="./image/about1.jpg" alt="about 1" > </div> 
+        <p>Hello! I’m Selome, a third-year Software Engineering student with a passion for web development and game development. My journey into the world of technology began in high school when I discovered the thrill of writing my first HTML code. Since then, I've been captivated by the endless possibilities that software development offers.</p>
+    </div> 
+    <div class="frame">
+      <video src="./image/about2.mp4" controls width="200" height="200">
         Your browser does not support the video tag.
-    </video>
-            <h2>My Interests</h2>
-            <p>
-
-                * Web Development
-                I love crafting interactive and user-friendly websites. I enjoy working with HTML, CSS, and JavaScript, and I have experience with frameworks like React and Angular. I believe that a well-designed website can create a meaningful user experience, and I strive to achieve that in every project I undertake.</p>
-                
-               <P> * Game Development
-                In addition to web development, I have a strong interest in game development. I spend my free time exploring game design principles and experimenting with engines like Godot. I’m particularly fascinated by the intersection of storytelling and gameplay, and I aim to create engaging and immersive experiences for players.</p>
-                <h3> My Skills</h3>
-                <p>
-                    - Programming Languages: Java, Python, JavaScript</p>
-                    <P>- Web Technologies: HTML, CSS, React, Node.js</P>
-                    <P>- Game Development: Godot, Game Design Principles</P>
-                    <P>- Tools: Git, Visual Studio Code, Figma
-                    </p>
+      </video>
+      <h2>My Interests</h2>
+      <p>
+          * Web Development<br>
+          I love crafting interactive and user-friendly websites. I enjoy working with HTML, CSS, and JavaScript, and I have experience with frameworks like React and Angular. I believe that a well-designed website can create a meaningful user experience, and I strive to achieve that in every project I undertake.
+      </p>
+      <p> 
+          * Game Development<br>
+          In addition to web development, I have a strong interest in game development. I spend my free time exploring game design principles and experimenting with engines like Godot. I’m particularly fascinated by the intersection of storytelling and gameplay, and I aim to create engaging and immersive experiences for players.
+      </p>
+      <h3> My Skills</h3>
+      <p>
+          - Programming Languages: Java, Python, JavaScript<br>
+          - Web Technologies: HTML, CSS, React, Node.js<br>
+          - Game Development: Godot, Game Design Principles<br>
+          - Tools: Git, Visual Studio Code, Figma
+      </p>
     </div>
-
+  </div> 
   </main>
   <footer>
-    <p>&copy; 2024 Selome. All rights reserved.</p>
+    <p>© 2024 Selome. All rights reserved.</p>
   </footer>
-  <script src="./js/about.js"></script>
+  <script src="../src/script.js"></script>
 </body>
 </html>

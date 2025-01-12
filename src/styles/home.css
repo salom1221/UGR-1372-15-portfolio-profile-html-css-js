@@ -58,7 +58,6 @@ nav ul li a:hover {
 
 /* Hamburger icon */
 .hamburger-icon {
-  display: none;
   cursor: pointer;
   order: 2;
  
@@ -70,41 +69,35 @@ nav ul li a:hover {
 }
 
 .hidden-menu {
-  display: none;
+  display: none; /* Ensure it's hidden initially */
   position: absolute;
-  top: 100%;
-  right: 20px;
+  top: 60px; /* Adjust based on your header height */
+  right: 10px;
   background-color: #000;
-  color:white;
+  color: white;
   border-radius: 4px;
   overflow: hidden;
-}
-
-.hidden-menu ul {
-  list-style: none;
+  z-index: 10;
   padding: 10px;
 }
 
-.hidden-menu ul li {
-  margin: 10px 0;
-}
-
-.hidden-menu ul li a {
-  color: white;
+.hidden-menu a {
+  display: block;
   text-decoration: none;
+  color: white;
+  padding: 8px 10px;
 }
 
-.hidden-menu ul li a:hover {
-  text-decoration: underline;
-  color:aqua;
-}
-.hidden-menu {
-  display: none;
+.hidden-menu a:hover {
+  background-color: aqua;
+  color: black;
 }
 
+/* Show when 'active' class is added */
 .hidden-menu.active {
   display: block;
 }
+
 
 main {
   display: flex;
@@ -169,6 +162,10 @@ footer p {
   .hamburger-icon {
     display: block; 
   }
+.hidden-menu.active {
+    display: block; 
+  }
+
 
   .header-icons {
     order: 1;
@@ -238,4 +235,12 @@ footer {
     font-size: 18px; 
   }
 
+}
+
+
+
+
+
+.hidden-menu.active {
+  display: block; 
 }
