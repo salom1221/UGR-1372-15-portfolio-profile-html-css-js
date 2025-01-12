@@ -225,6 +225,13 @@ footer p {
 .frame:nth-child(2) video {
   order: 2; 
 }
+
+.image-container{
+  display: flex;
+    gap: 2em;
+    flex: 1;
+    width: 100%;
+}
 }
 @media (min-width: 769px) { /* Tablet landscape, mobile landscape, and desktop */
   nav ul {
@@ -252,6 +259,7 @@ footer p {
     flex-direction: row; 
     align-items: flex-start;
 }
+
 
 .frame {
     flex: 1 1 45%; 
